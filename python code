@@ -1,0 +1,39 @@
+# welcome to Hogwarts Sorting Quiz. (question source = GoToQuiz )
+
+
+print ('(you along with other first years follow Professor McGonagall to a big hall)')
+input('please press enter after every dialogue')
+print ('Professor Dumbledore : I have a few start-of-term notices I wish to announce,\nthe first years please note that the dark forest is strictly forbidden to all students.\nAlso our caretaker Mr. Filch has asked me to remind you that the third floor coridoor on the right hand side is out of bounds to  everyone who does not wish to die a most painful death.\n Thank you.')
+input()
+print ('Professor McGonagall : When I call your name, you shall come forth, I shall place the Sorting Hat on your head,and you will be sorted into your houses.')
+
+print ('(and the sotring begins.....)')
+
+print('Coming ahead is a quiz to sort you to your respective houses.\nPlease enter your answer carefully and honestly.\nFor every question, enter the option numer you fits you the most. (1, 2, 3 or 4) ')
+
+
+print ('question 1 \nAfter you have died, what would you most like people to do when they hear your name? \n 1) Think with admiration of your achievements. \n 2) Ask for more stories about your adventure. \n 3) Miss you but smile. \n 4) I do not care what people think about me after I am dead.')
+_1 = int(input())
+
+print ('question 2 \nGiven the choice, would you rather invent a potion that would guarantee you: \n 1) wisdom \n 2) glory \n 3) love \n 4) power')
+_2 = int(input())
+
+print ('question 3 \nHow would you like to be known to history? \n 1) The Bold\n 2) The Wise \n 3) The Good \n 4) The Great')
+_3 = int(input())
+
+print('question 4 \nFour boxes are placed before you. Which would you try and open? \n 1) The small pewter box, unassuming and plain, with a scratched message upon it that reads "I open only for the worthy". \n 2) The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within. \n 3) The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.\n 4) The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.')
+_4 = int(input()) 
+
+print ('question 5 \nWhich road tempts you most? \n 1)The cobbled street lined with ancient buildings \n 2)The narrow, dark, lantern-lit alley \n 3) The wide, sunny, grassy lane. \n 4) The twisting, leaf-strewn path through woods.')
+_5 = int(input())
+
+add = _1 + _2 + _3 + _4 + _5
+
+if add>=5 and add<=8 :
+  print('You are in GRYFFINDOR!\n Values of this house are:\n Bravery \n Chivalry \n Helping others \n Gryffindor Common Room - located in Gryffindor Tower, through the Fat Lady portrait.\n You will be escorted to your common room by your house captain in a few minutes.')
+elif add>=9 and add<=13:
+  print('You are in RAVENCLAW!\n Values of this house are:\n Intelligence \n Knowledge \n Planning ahead \n Wit \n Ravenclaw Common Room - located in Ravenclaw Tower, beyond a bronze eagle-shaped knocker that posses a riddle.\n You will be escorted to your common room by your house captain in a few minutes.')
+elif add>=14 and add<=17:
+  print ('You are in Hufflepuff \n Values of this house are:\nHard work \n Patience \n Loyalty \n Fair play \n Hufflepuff Common Room - located in Hufflepuff Basement, below ground level behind a stack of barrels near the kitchens. \n You will be escorted to your common room by your house captain in a few minutes.')
+else :
+  print('You are in Slytherin \n Values of this house are:\n Ambition \n Cunningness \n Heritage \n Resourcefulness \n Slytherin Common Room - located in Slytherin Dungeon, below ground level beyond a stone wall. \n You will be escorted to your common room by your house captain in a few minutes.')
